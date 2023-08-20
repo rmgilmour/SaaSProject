@@ -2,6 +2,10 @@
   --white: #FFF;
   --black: #000;
   --blue-button: #006eff;
+  --green: #2acaa6;
+  --red: #da413c;
+  --orange: #f3c89b;
+  --blue: #437dfb;
   --font-color-base: #666;
   --font-color-dark: #212529;
   --font-color-light: #b0aebe;
@@ -23,6 +27,9 @@
   --size-30: 1.875rem;
   --size-40: 2.5rem;
   --size-50: 3.125rem;
+  --size-60: 3.75rem;
+  --size-65: 4.063rem;
+  --size-70: 4.375rem;
   --size-75: 4.688rem;
   --size-85: 5.313rem;
   --size-100: 6.25rem;
@@ -32,8 +39,8 @@
 html { scroll-behavior: smooth; }
 
 body {
-  font-family: "Open Sans", sans-serif;
-  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
   font-size: var(--size-14);
   line-height: 1.6;
   letter-spacing: 0;
