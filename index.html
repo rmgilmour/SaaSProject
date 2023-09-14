@@ -17,7 +17,7 @@
 <body>
   <div class="topSection">
     <div class="topSectionContent">
-
+      
       <nav id="topNav" class="navbar nav">
         <div class="container">
           <button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
@@ -50,9 +50,11 @@
             <div class="hero-left">
               <h2>Empowering<br>teams with the<br>freedom</h2>
               <p>Own the unlimited power of the web development</p>
+              <div class="actions">
               <button class="btn"><i class="fa-solid fa-circle-play fa-lg"></i>
                 Play Video</button>
               <span class="learn">Learn more</span>
+            </div>
             </div>
             <div class="hero-right">
               <div class="image1"><img class="sizeOne" src="./assets/logo_icons/google.png"></div>
@@ -69,13 +71,14 @@
   </div>
 
   <section class="keyBenefitsSection">
+    <div class="container keyBenefitContent">
     <div class="benefitsTitle">
-      <h3>Key Benefits</h3>
+      <h3 class="keyBenefit">Key Benefits</h3>
       <p class="keyParagraph">Design faster with a growing array of beautiful templates</p>
     </div>
 
     <div class="benefitList">
-      <div class="benefitItem">
+      <div class="benefitItem"><a href=""></a>
         <div class="benefitContent">
           <img class="cardImage" src="./assets/icons/responsive.svg">
           <h4 class="benefit">Responsive</h4>
@@ -83,29 +86,55 @@
           <p class="learn">Learn more</p>
         </div>
       </div>
-      <div class="benefitItem">
+      <div class="benefitItem"><a href=""></a>
         <div class="content2"> <img class="cardImage" src="./assets/icons/customizable.svg"></div>
         <h4 class="benefit">Customizable</h4>
         <p class="benefitParagraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         <p class="learn">Learn more</p>
       </div>
-      <div class="benefitItem">
+      <div class="benefitItem"><a href=""></a>
         <div class="content3"> <img class="cardImage" src="./assets/icons/premium.svg"></div>
         <span class="premium"><h4 class="benefit">Premium</h4><button class="sketch">sketch</button></span>
         <p class="benefitParagraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         <p class="learn">Learn more</p>
       </div>
-      <div class="benefitItem">
+      <div class="benefitItem"><a href=""></a>
         <div class="content4"> <img class="cardImage" src="./assets/icons/documentation.svg"></div>
         <h4 class="benefit">Documentation</h4>
         <p class="benefitParagraph">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
         <p class="learn">Learn more</p>
       </div>
     </div>
+  </div>
+  </section>
+
+  <section class="bannerSection">
+    <div class=" container bannerSectionContent">
+      <div class="banner-left">
+        <h3 class="banner">Front makes you look at things from a different perspective</h3>
+        <button class="btn"><i class="fa-solid fa-circle-play fa-lg"></i>
+          Play Video</button>
+      </div>
+      <div class="banner-right">
+        <img src="./assets/banners/banner_one.jpg" alt="Front Banner">
+      </div>
+
+    </div>
+
+
   </section>
 
 
   <script>
+    const nav = document.getElementById("topNav");
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        nav.classList.add("sticky");
+      } else {
+        nav.classList.remove("sticky");
+      }
+    }
+
     const navButton = document.querySelector('button[aria-expanded]');
 
     function toggleNav({ target }) {

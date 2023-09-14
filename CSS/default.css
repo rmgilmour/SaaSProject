@@ -17,6 +17,9 @@
   --danger: #FF8B8D;
   --grad-1: #a1ecff;
   --grad-2: #7dbcff;
+  --vector-1: #d9d9d9;
+  --vector-2: #e1e7ef;
+  --banner: #f8fafe;
 
   --size-5: 0.313rem;
   --size-10: 0.625rem;
@@ -31,8 +34,10 @@
   --size-65: 4.063rem;
   --size-70: 4.375rem;
   --size-75: 4.688rem;
+  --size-80: 5rem;
   --size-85: 5.313rem;
   --size-100: 6.25rem;
+  --size-120: 7.5rem;
   --size-150: 9.375rem;
 }
 
@@ -45,7 +50,8 @@ body {
   line-height: 1.6;
   letter-spacing: 0;
   background: #FFF;
-  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
   padding: 0;
 }
 
