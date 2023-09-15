@@ -206,12 +206,11 @@
   display: grid;
   justify-content: center;
   justify-items: center;
-  font: black;
-  font-weight: 700;
-  font-size: 26px;
 }
 
 .keyBenefit {
+  font-weight: 700;
+  font-size: 26px;
   margin-bottom: 0;
 }
 
@@ -282,7 +281,10 @@
   /* Banner Section */
 
   .bannerSection {
-    padding: 0, 30px, 80px, 30px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    margin-right: 30px;
+
   }
 
   .bannerSectionContent {
@@ -291,8 +293,8 @@
     background-color: var(--banner);
     padding-top: 120px;
     padding-left: 30px;
-    padding-right: 0px;
-    padding-bottom: 0px;
+    padding-right: 0;
+    padding-bottom: 0;
     margin-right: auto;
     margin-left: auto;
   }
@@ -307,6 +309,51 @@
     font-size: 26px;
     gap: 11px;
   }
+
+  /* Why Front Section */
+  .whyFrontSection {
+    display: flex;
+    padding-bottom: 80px;
+    gap: 40px;
+  }
+
+  .whyFrontContent {
+    display: grid;
+    justify-content: center;
+    gap: var(--size-30);
+  }
+
+  .whyFrontTitle {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
+  }
+
+  .whyTitle {
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 0;
+  }
+
+  .whyText {
+    font-size: 16px;
+  }
+
+  .whyBullets {
+    display: flex;
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+  .bulletItem {
+    display: grid;
+    
+  }
+
+
 
 
 
